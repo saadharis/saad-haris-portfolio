@@ -47,10 +47,11 @@ git push -u origin main
    - Select your `saad-haris-portfolio` repository
 
 3. **Configure build settings:**
-   - Framework preset: `Next.js`
+   - Framework preset: `Next.js (Static HTML Export)`
    - Build command: `npm run build`
-   - Build output directory: `.next`
+   - Build output directory: `out`
    - Root directory: `/` (leave as default)
+   - Node.js version: `20.11.0` (automatically detected from .node-version)
 
 4. **Environment variables (if needed):**
    - No environment variables required for this basic setup
