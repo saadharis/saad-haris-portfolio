@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-inter",
+});
+
 export const metadata: Metadata = {
-  title: "Saad Haris | Data & Analytics Engineer",
-  description: "Portfolio of Saad Haris - Utility Professional specializing in Data Analytics, Business Intelligence, and Digital Transformation in the Power & Utilities sector.",
-  keywords: ["Data Analytics", "Business Intelligence", "Power BI", "Python", "SQL", "Utilities", "Smart Grid"],
+  title: "Saad Haris | Cloud Data & ML Engineer",
+  description: "Cloud Data & Analytics Engineer specializing in Machine Learning, Azure Data Services, and Business Intelligence. Building scalable ML solutions and data pipelines.",
+  keywords: ["Machine Learning", "Data Engineering", "Azure", "Python", "Power BI", "TensorFlow", "Data Science", "Cloud Computing"],
 };
 
 export default function RootLayout({
@@ -14,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className={`${inter.variable} antialiased`}>
         {children}
       </body>
     </html>
